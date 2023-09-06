@@ -1,4 +1,3 @@
-# chatrbox
 
 ## Description
 
@@ -13,7 +12,7 @@ I opted to use Redux Toolkit and quite enjoyed it for the purposes of this appli
 - SocketIO
 - Reactjs
 - NodeJS
-- Redux (Redux Toolkit)
+- Redux Toolkit
 - Redux-thunk
 - React Router
 - Jsonwebtoken
@@ -21,5 +20,4 @@ I opted to use Redux Toolkit and quite enjoyed it for the purposes of this appli
 - styled-components
 - Higher-Order Components
 
-Live application: [chatrbox](https://chatrbox-app.herokuapp.com/)
-https://github.com/gkord/chat-app/tree/master
+
