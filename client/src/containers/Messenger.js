@@ -14,7 +14,7 @@ import ChatInput from "../components/ChatInput";
 import ChatView from "../components/ChatView";
 import { MessengerContainer } from "./styles";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("/");
 
 const Messenger = () => {
   const dispatch = useDispatch();

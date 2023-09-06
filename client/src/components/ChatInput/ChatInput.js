@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import { StyledForm, StyledInput } from "./styles";
 import { Button } from "../commonStyles";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("/");
 
 const ChatInput = ({ username, userId }) => {
   const [message, setMessage] = useState("");
