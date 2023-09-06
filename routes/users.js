@@ -9,6 +9,7 @@ const tokensGenerate = require("../utils/tonkensGenerate");
 
 const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
 const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
+const LOGOUT_TIME = process.env.LOGOUT_TIME;
 
 router.get("/", async (req, res) => {
   try {
@@ -158,7 +159,7 @@ router.post("/refresh", (req, res) => {
       },
       process.env.ACCESS_TOKEN_SECRET,
       {
-        expiresIn: "3m",
+        expiresIn: LOGOUT_TIME,
       }
     );
     return res.json({ accessToken });
